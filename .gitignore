@@ -1,0 +1,9 @@
+
+*.pyc
+
+*.sqlite3
+.coverage
+SECRET
+
+# DS_Store
+.DS_Store
