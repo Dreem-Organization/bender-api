@@ -1,3 +1,3 @@
-# Bender-Back
+# Bender-api
 
 Backend for Bender
