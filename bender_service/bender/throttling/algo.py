@@ -5,6 +5,10 @@ from ..models import Experiment
 
 class AlgoThrottle(throttling.BaseThrottle):
     def allow_request(self, request, view):
+
+        if str(request.user) in settings.WHITELIST:
+            return True
+
         if view.action == "create":
             experiment_pk = request.data.get('experiment')
             if experiment_pk:
