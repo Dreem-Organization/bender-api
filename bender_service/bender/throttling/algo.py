@@ -6,7 +6,7 @@ from ..models import Experiment
 class AlgoThrottle(throttling.BaseThrottle):
     def allow_request(self, request, view):
 
-        if str(request.user.pk) in settings.WHITELIST:
+        if request.user.pk in settings.WHITELIST:
             return True
 
         if view.action == "create":
