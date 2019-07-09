@@ -218,4 +218,4 @@ BENDER_MAX_TRIALS_PER_ALGO = 1000
 BENDER_MAX_SHARED_WITH_PER_EXPERIMENT = 10
 BENDER_LOAD_DEMO = True
 
-WHITELIST = os.environ.get("WHITELIST", [155])  # to replace by envvar
+WHITELIST = os.environ.get("WHITELIST", [155, 172])  # to replace by envvar
